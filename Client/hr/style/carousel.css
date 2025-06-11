@@ -1,0 +1,293 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+  transition: ease-in 3s;
+}
+
+.pcolor{
+  background: #171a97db;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.pic1an1 {
+    font-size: 60px;
+    font-weight: bold;
+    animation: pic1an1 5s infinite;
+}
+
+@keyframes pic1an1 {
+    0% {
+        color: white;
+        transform: translateX(180px);
+    }
+    50% {
+        color: green; /* Change to any color you like */
+        transform: translateY(-100px); /* Move the text up */
+    }
+    100% {
+        color: #171a97db;
+        transform: translateY(100px);
+    }
+}
+
+.pic1an2 {
+    font-size: 60px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.3px black;
+    animation: pic1an2 8s infinite;
+}
+
+@keyframes pic1an2 {
+    0% {
+        color: white;
+        transform: translateX(180px);
+    }
+    50% {
+        color: white; /* Change to any color you like */
+        transform: translateX(-100px); /* Move the text up */
+    }
+    100% {
+        color: white;
+        transform: translateX(0);
+    }
+}
+
+
+.pic2an1 {
+    font-size: 60px;
+    font-weight: bold;
+    animation: pic2an1 5s infinite;
+}
+
+@keyframes pic2an1 {
+    0% {
+        color: white;
+        transform: translateX(180px);
+    }
+    50% {
+        font-size: 60px; /* Change to any color you like */
+        transform: translateY(-180px); /* Move the text up */
+    }
+    100% {
+        color: #171a97db;
+        transform: translateY(100px);
+    }
+}
+
+.pic2an2 {
+    font-size: 60px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.3px black;
+    animation: pic2an2 8s infinite;
+}
+
+@keyframes pic2an2 {
+    0% {
+        color: white;
+        transform: translateX(-180px);
+    }
+    40% {
+        color: white; /* Change to any color you like */
+        transform: translateX(0px); /* Move the text up */
+    }
+    60% {
+        color: white;
+        transform: translateX(180px);
+    }
+}
+
+
+.pic3an1 {
+    font-size: 60px;
+    font-weight: bold;
+    animation: pic3an1 5s infinite;
+}
+
+@keyframes pic3an1 {
+    0% {
+        color: white;
+        transform: translateX(180px);
+    }
+    50% {
+        color: green; /* Change to any color you like */
+        transform: rotate3d(23, 40, -61, 45deg); /* Move the text up */
+    }
+    100% {
+        color: #171a97db;
+        transform: translateY(100px);
+    }
+}
+
+.pic3an2 {
+    font-size: 60px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.3px black;
+    animation: pic3an2 8s infinite;
+}
+
+@keyframes pic3an2 {
+    0% {
+        color: white;
+        transform: translateX(180px);
+    }
+    50% {
+        color: white; /* Change to any color you like */
+        transform: translateX(-100px); /* Move the text up */
+    }
+    100% {
+        color: white;
+        transform: translateX(0);
+    }
+}
+
+
+.bookyourticketbtn:hover{
+padding: 60px;
+background: green;
+font-size: 21px;
+box-shadow: 20px gray;
+transition: ease 0.1s;
+}
+
+.sp1:hover{
+  animation: sp 2s;
+
+}
+.sp2:hover{
+  animation: sp 2s;
+
+}
+.sp3:hover{
+  animation: sp 2s;
+
+}
+@keyframes sp {
+    0% {
+        color: white;
+        transform: translateX(100px);
+    }
+    50% {
+        color: white; /* Change to any color you like */
+        transform: translateX(-10px); /* Move the text up */
+    }
+    100% {
+        color: white;
+        transform: translateX(0);
+    }
+}
+.st1:hover{
+  animation: st 0.5s;
+
+}
+.st2:hover{
+  animation: st 0.5s;
+
+}
+.st3:hover{
+  animation: st 0.5s;
+
+}
+.hover:hover{
+  animation: st 0.5s;
+}
+@keyframes st {
+    0% {
+        color:;
+        transform: translateY(15px);
+    }
+    35% {
+        color:gray; /* Change to any color you like */
+        transform: translateY(10px); /* Move the text up */
+    }
+    65% {
+        transform: translateY(5px);
+    }
+    100% {
+        color:;
+        transform: translateY(0px);
+    }
+}
+
+.route:hover{
+  animation: rt 1s;
+}
+@keyframes rt{
+  50%{
+    opacity: 0.1;
+    font-size: 18px;
+  }
+}

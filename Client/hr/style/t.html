@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Transition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="section" id="section1">Section 1</div>
+        <div class="section" id="section2">Section 2</div>
+        <div class="section" id="section3">Section 3</div>
+        <div class="section" id="section4">Section 4</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Transition</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    height: 200vh; /* Ensure enough space to scroll */
+}
+
+.section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 100px;
+    margin: 50px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.section.visible {
+    opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="section" id="section1">Section 1</div>
+        <div class="section" id="section2">Section 2</div>
+        <div class="section" id="section3">Section 3</div>
+        <div class="section" id="section4">Section 4</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+
+</script>
+</html>
